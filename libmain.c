@@ -10,7 +10,8 @@ const char service_interp[] __attribute__((section(".interp"))) = "/lib/ld-linux
 
 void __lib_main(void)
 {
-    printf("Entry point of libtest.so \n");
+    // rsp is not aligned to 16 bytes
+    printf("Entry point of libtest.so \n"); // <- SEGV here
 
     _exit(0);
 }
