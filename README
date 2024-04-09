@@ -1,3 +1,5 @@
 为什么会这样呢？
 
+make x86-64 的 .so 文件无法直接运行.
+
 参考: https://www.cnblogs.com/motadou/p/9644566.html
